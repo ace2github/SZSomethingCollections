@@ -16,19 +16,3 @@ cp ${src_path}/SZSomethingCollections/CodeSnippets/* ${xcode_user_def_path}
 
 rm -fr "./SZSomethingCollections"
 echo "Complete!"
-
-:<<EOF
-f_sum_int() {
-	echo $@
-	sum=0
-	for var in $@; do
-		echo ${var}
-		sum+=${var}
-	done
-	
-	return sum
-}
-
-f_sum_int 1, 2, 3
-echo "输入的两个数字之和为 $? !"
-EOF
