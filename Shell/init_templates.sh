@@ -1,7 +1,7 @@
 #! /bin/bash
 
-# rm -fr "./SZSomethingCollections"
-# git clone https://github.com/ace2github/SZSomethingCollections.git
+rm -fr "./SZSomethingCollections"
+git clone https://github.com/ace2github/SZSomethingCollections.git
 
 # 变量名和等号之间不能有空格
 target_sys_template_path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates
@@ -28,7 +28,7 @@ install "${new_user_template_path}"/File\ Templates/SZFiles "${target_sys_templa
 echo 拷贝工程模板
 install "${new_user_template_path}"/Project\ Templates/iOS/SZProject "${target_sys_template_path}"/Project\ Templates/iOS/SZProject
 
-# rm -fr "./SZSomethingCollections"
+rm -fr "./SZSomethingCollections"
 echo "Complete!"
 
 
