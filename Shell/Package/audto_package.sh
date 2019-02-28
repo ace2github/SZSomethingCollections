@@ -142,20 +142,3 @@ if [[ $resultcode -ne 0 ]]; then
 fi
 
 echo 'finish'
-
-#######################
-
-# 初始化构建目录
-# build_path=`PWD`/build
-# if [ ! -d $build_path  ];then
-#   mkdir $build_path
-# fi
-
-# product_path=`PWD`/product
-# if [[ ! -d $product_path ]]; then
-#     mkdir $product_path
-# fi
-# xcodebuild -workspace ztjyyd.xcworkspace -scheme ztjyyd -configuration Build -arch arm64 -derivedDataPath $build_path PRODUCT_BUNDLE_IDENTIFIER=com.szy.seebabyyd.test PRODUCT_NAME="掌通家园园丁" PROVISIONING_PROFILE_SPECIFIER=adHoc_com.szy.seebabyyd.test >> log.txt
-
-# 将app->ipa
-# xcrun -sdk iphoneos PackageApplication -v $build_path/Build/Products/Release-iphoneos/掌通家园园丁.app -o $product_path/ztjyyd.ipa
